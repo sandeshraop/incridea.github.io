@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Register for INCRIDEA 2026 - The most anticipated technology event of the year. Join industry leaders and innovators.">
+    <title>INCRIDEA 2026 | Registration Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <img src="images-Photoroom.png" alt="INCRIDEA 2026 Logo" class="header-logo">
+            <div class="header-text">
+                <h1 class="conference-title">INCRIDEA 2026</h1>
+                <p class="conference-tagline">Innovative, Creative, Idea</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="registration-container">
+        <section id="registration" class="registration-form-section">
+            <div class="section-header">
+                <h2>Secure Your Spot</h2>
+                <p class="section-subtitle">Complete the form below to register for INCRIDEA 2026</p>
+            </div>
+            <form action="/submit-registration" method="post" enctype="multipart/form-data">
+                <fieldset class="form-section">
+                    <legend class="section-legend">Personal Information</legend>
+                    <p class="field-note">Please provide your personal details accurately</p>
+                    
+                    <div>
+                        <label for="title">Title:</label>
+                        <select id="title" name="title" required>
+                            <option value="">Select Title</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required 
+                               placeholder="Enter your first name" ,
+                               title="Please enter at least 2 letters">
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required
+                               placeholder="Enter your last name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required
+                               placeholder="emailid@example.com">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="number" id="phone" name="phone" 
+                               inputmode="numeric"
+                               minlength="10"
+                               maxlength="10"
+                               placeholder="9876543210">
+                    </div>
+
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend class="section-legend">Conference Details</legend>
+                    <p class="field-note">Select your preferred conference options</p>
+                    
+                    <div>
+                        <label for="event">Select Event:</label>
+                        <select id="event" name="event" required>
+                            <option value="">-- Select an event --</option>
+                            <option value="technical">Technical</option>
+                            <option value="non-technical">Non-Technical</option>
+                            <option value="pro-night">Pro-Night</option>
+                            <option value="auto-expo">AutoExpo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tickets">Number of Tickets (1-5):</label>
+                        <input type="number" id="tickets" name="tickets" 
+                               min="1" max="5" value="1">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section"> 
+                        <label for="notifications">
+                            <input type="checkbox" id="notifications" name="notifications" checked>
+                            I want to receive email notifications
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            I agree to the <a href="#terms">Terms and Conditions</a>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Register Now</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>INCRIDEA 2026</h3>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <address>
+                    <p>Email: <a href="mailto:rao17081@gmail.com" class="footer-link">rao17081@gmail.com</a></p>
+                    <p>Phone: +91 9876543210</p>
+                </address>
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 INCRIDEA . All rights reserved. | <a href="#privacy" class="footer-link">Privacy Policy</a> | <a href="#terms" class="footer-link">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
