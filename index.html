@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Register for INCRIDEA 2026 - The most anticipated technology event of the year. Join industry leaders and innovators.">
-    <title>INCRIDEA 2026 | Registration Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join INCRIDEA 2026 - An innovative technology conference">
+    <title>INCRIDEA 2026 Conference</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
         <div class="header-content">
             <img src="images-Photoroom.png" alt="INCRIDEA 2026 Logo" class="header-logo">
             <div class="header-text">
-                <h1 class="conference-title">INCRIDEA 2026</h1>
-                <p class="conference-tagline">Innovative, Creative, Idea</p>
+                <h1>INCRIDEA 2026</h1>
+                <p>Innovative, Creative, Idea</p>
             </div>
         </div>
     </header>
+    
+    <section class="media-section">
+        <div class="video-wrapper">
+            <!-- Embedded Video -->
+            <iframe 
+                src="https://www.youtube.com/embed/Fd1eGzXNfwM?autoplay=1&mute=0&loop=1&playlist=Fd1eGzXNfwM" 
+                title="INCRIDEA 2026 Highlights" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            
+            <!-- Fallback Image -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/event-small.jpg">
+                <img src="images/event-large.jpg" alt="INCRIDEA 2026 Event" class="fallback-image">
+            </picture>
+        </div>
+        
+        <!-- Audio Player -->
+        <div class="audio-player">
+            <h3>Event Theme Music</h3>
+            <div class="custom-audio">
+                <audio controls>
+                    <source src="pani.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p class="music-note">Background music: Pani Theme</p>
+        </div>
+    </section>
 
     <main class="registration-container">
         <section id="registration" class="registration-form-section">
